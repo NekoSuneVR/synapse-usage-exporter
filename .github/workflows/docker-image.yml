@@ -64,7 +64,7 @@ jobs:
         id: build-and-push
         uses: docker/build-push-action@v2
         with:
-          context: .
+          context: docker/
           file: Dockerfile
           tags: |
             ghcr.io/nekosunevr/synapse-usage-exporter:latest
